@@ -1,0 +1,8 @@
+var app = angular.module('NAME', [DEPENDECIES]);
+
+Inside app.js, include in script tag
+<html ng-app="module name">
+
+Expressions allow you to enter dynamic values. {{ whatever }}
+
+Controllers are where we define our applications behaviors by defining functions and values. 
