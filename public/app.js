@@ -43,26 +43,4 @@
       controllerAs:'users'
     }
   }]);
-
-  // app.directive('showUser',['$http', '$routeParams', function($http, $routeParams){
-  //   return {
-  //     restrict:'E',
-  //     templateUrl:'/users/show.html',
-  //     controller:function(){
-  //       var store = this;
-  //       console.log($routeParams);
-  //       $http({
-  //         method:'GET',
-  //         url:'/users/'
-  //       }).then(function(results){
-  //         console.log();
-  //       });
-  //     },
-  //     controllerAs:'showUser'
-  //   };
-  // }]);
-
-  app.controller('ShowUserController', ['$http','$scope', '$routeParams', function($http, $scope, $routeParams){
-    console.log($routeParams);
-  }]);
 })();
