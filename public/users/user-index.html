@@ -1,0 +1,30 @@
+<main class="container">
+  <section class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+      <h1>User List</h1>
+
+      <table class="table table-striped">
+
+        <thead>
+          <th>User ID</th>
+          <th>Full Name</th>
+          <th>User Name</th>
+        </thead>
+
+        <tbody ng-repeat="user in users.users">
+          <tr>
+            <td>
+              <a ng-href="/users/{{ user.id }}">{{ user.id }}</a>
+            </td>
+            <td>{{ user.full_name }}</td>
+            <td>{{ user.username }}</td>
+            <td><img ng-src="{{ user.img_url }}" height="100px" width="100px" /></td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </div>
+  </section>
+</main>
