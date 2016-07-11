@@ -2,13 +2,7 @@
   //Start doing app shit.
   var app = angular.module('miniReddit', ['ngRoute']);
 
-  app.config(function($routeProvider){
-    $routeProvider.when('/users/:id',{
-      templateUrl:'/user/show.html',
-      controller:'ShowUserController',
-      controllerAs:'showUser'
-    })
-  });
+  app.config()
 
   app.directive('indexPartial', function(){
     return {
